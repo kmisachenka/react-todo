@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import TodoApp from './components/TodoApp';
+
 import registerServiceWorker from './registerServiceWorker';
 
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap-theme.css';
+import './index.css'
+
 ReactDOM.render(
-    <App />,
+    <TodoApp />,
     document.getElementById('root')
 );
 registerServiceWorker();
